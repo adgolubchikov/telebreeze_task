@@ -1,0 +1,51 @@
+#container {
+
+}
+
+#menu {
+display: flex;
+z-index: 1;
+max-width: 300px;
+min-width: 200px;
+position: fixed;
+top: 0px;
+left: 0px;
+opacity: 1;
+background-color: #35434c;
+height: 100%;
+}
+
+.opened {
+margin-left: 0px;
+animation-name: opening;
+animation-duration: 2s;
+}
+
+.closed {
+animation-name: closing;
+animation-duration: 2s;
+margin-left: -100%;
+}
+
+.hidden {
+margin-left: -100%;
+
+}
+
+@keyframes opening {
+from {
+margin-left: -300px;
+}
+to {
+margin-left: 0px;
+}
+}
+
+@keyframes closing {
+from {
+margin-left: 0px;
+}
+to {
+margin-left: -300px;
+}
+}
