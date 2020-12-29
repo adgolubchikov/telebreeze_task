@@ -1,51 +1,124 @@
-#container {
+body {
+	color: #ffffff;
+	margin: 0;
+}
 
+#container {
+	width: 100%;
+	height: 100%;
+}
+
+header {
+	background-color: #2c2c2c;
+	padding: 10px;
+}
+
+main {
+	display: flex;
+	flex-direction: row;
+	padding: 40px 40px 40px 40px;
+	background-color: #f97252;
+}
+
+#header {
+	font-size: 25px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#img {
+	width: 40%;
+	padding: 10px 10px 10px 10px;
+}
+
+#textblock {
+	flex-direction: column;
+	padding: 10px 10px 10px 10px;
+	flex-grow: 1;
+	align-items: stretch;
+}
+
+#short {
+	margin: 5px;
+	text-transform: uppercase;
+	font-size: 17px;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+#full {
+	margin: 5px;
+}
+
+#button>span {
+	cursor: pointer;
+	border: 2px solid white;
+	font-size: 19px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 10px;
+}
+
+#button {
+	margin: 5px;
+	padding: 12px;
 }
 
 #menu {
-display: flex;
-z-index: 1;
-max-width: 300px;
-min-width: 200px;
-position: fixed;
-top: 0px;
-left: 0px;
-opacity: 1;
-background-color: #35434c;
-height: 100%;
+	display: flex;
+	flex-direction: column;
+	z-index: 1;
+	max-width: 300px;
+	min-width: 200px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	opacity: 1;
+	background-color: #35434c;
+	height: 100%;
+}
+
+.menu-item {
+	padding: 10px;
 }
 
 .opened {
-margin-left: 0px;
-animation-name: opening;
-animation-duration: 2s;
+	margin-left: 0px;
+	animation-name: opening;
+	animation-duration: 1s;
 }
 
 .closed {
-animation-name: closing;
-animation-duration: 2s;
-margin-left: -100%;
+	animation-name: closing;
+	animation-duration: 1s;
+	margin-left: -100%;
 }
 
 .hidden {
-margin-left: -100%;
-
+	margin-left: -100%;
 }
 
 @keyframes opening {
-from {
-margin-left: -300px;
-}
-to {
-margin-left: 0px;
-}
+	from {
+		margin-left: -300px;
+	}
+	to {
+		margin-left: 0px;
+	}
 }
 
 @keyframes closing {
-from {
-margin-left: 0px;
+	from {
+		margin-left: 0px;
+	}
+	to {
+		margin-left: -300px;
+	}
 }
-to {
-margin-left: -300px;
+
+#link {
+	cursor: pointer;
 }
-}
+
+#description {}

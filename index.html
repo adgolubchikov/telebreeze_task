@@ -8,14 +8,20 @@
 	</head>
 	<body>
 		<div id="menu" class="hidden">
-		<div class="menuitem"><button onclick="closeMenu()">Close</button></div>
+			<div class="menu-item"><button onclick="closeMenu()">Close</button></div>
 		</div>
 		<div id="container">
-		<header>
-		<button onclick="openMenu()">Open</button>
-		</header>
-		<main>
-		</main>
+			<header>
+				<button onclick="openMenu()">Open</button> <span id="header"></span>
+			</header>
+			<main>
+				<div id="img"><img src="default.gif" width="100%" /></div>
+				<div id="textblock">
+					<div id="short"></div>
+					<div id="full"></div>
+					<div id="button"><span></span></div>
+				</div>
+			</main>
 		</div>
 		<script src="script.js"></script>
 	</body>
